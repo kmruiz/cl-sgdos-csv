@@ -22,7 +22,7 @@ definition of the RFC4180 template is as follows:
 		:encloser-char #\"
 		:escape-char #\")
 
-Be aware of using characters in linebreak: it must be a string.
+Beware of using characters in linebreak: it must be a string.
 
 ### Reading CSV Files
 
@@ -30,7 +30,7 @@ The are a some ways for reading files: the easiest way is using the
 load-csv function. You only need the stream or the path to the file
 to read.
 
-**Be aware of using load-csv or import-csv functions for very large files!** It
+**Beware of using load-csv or import-csv functions for very large files!** It
 caches the entire file and it can be a full-killing memory user.
 
 For loading huge files use with-csv-input macro or the high-level map-csv
