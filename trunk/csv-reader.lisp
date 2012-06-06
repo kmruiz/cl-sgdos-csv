@@ -69,8 +69,6 @@
 	 do (unread-char (aref word (- index i)) stream))
       (return nil))
     (when (= (1+ index) (length (linebreak template))) 
-      (loop for i from 1 to index
-	 do (unread-char (aref word (- index i)) stream))
       (return t))))
 
 (defun read-unquoted-value (result
@@ -208,7 +206,7 @@ template:     The template to use (default RFC4180)"
   (with-csv-input (value :template template)
     (when ignore-header
       (read-csv-row))
-    (loop for i = (read-csv-row  :bindings bindings) 
+    (loop for i = (read-csv-row  :bindings bindings)
        while i collect i)))
 
 (defun import-csv (value class slots
