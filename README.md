@@ -4,7 +4,7 @@ cl-sgdos-csv
 cl-sgdos-csv is a library (or pretends to be) for mapping CSV files to LISP
 lists of CLOS objects in a totally configurable way using templates.
 
-**A csv-template is a definition of a "standard" format for a CSV files.** By
+**A csv-template is a definition of a "standard" format for CSV files.** By
 this way, you can write or read multiple CSV files without making manual
 configurations to variables.
 
